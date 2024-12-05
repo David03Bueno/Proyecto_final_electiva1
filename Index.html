@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Frontend</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>\
+    <header>
+        <h1>Gestión de Contenido (CMS)</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Crear Nuevo Post</h2>
+            <form id="create-form">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="content">Contenido:</label>
+                <textarea id="content" name="content" required></textarea>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Listado de Posts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Contenido</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="data-table">
+                    <!-- Los datos se cargarán dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
